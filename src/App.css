@@ -1,4 +1,5 @@
 .App {
+  position: relative;
   text-align: center;
 }
 
@@ -35,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.contenedor-inf {
+  position: block;
+  top: 525px;
 }

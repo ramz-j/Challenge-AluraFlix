@@ -1,0 +1,80 @@
+.banner-section {
+    position: inline-block;
+    position: relative;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 18, 51, 0.56), rgba(0, 18, 51, 0.56)),  
+                url("/public/img/banner-img.png");
+    height: 525px;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-inf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 45px;
+}
+
+.banner-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    width: 296px;
+    text-transform: uppercase;
+    background-color: #6BD1FF;
+    color: #F5F5F5;
+    border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+
+.banner-subtitle {
+    font-family: "Roboto", sans-serif;
+    color: #F5F5F5;
+    font-size: 28px;
+}
+
+.banner-section p {
+    font-family: "Roboto", sans-serif;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 50;
+    text-align: left;
+}
+
+.banner-img {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 45px;    
+}
+
+.img-inset-shadow {
+    position: relative;
+}
+
+.img-inset-shadow img {
+    width: 500px;
+    border-radius: 15px;
+    border: 5px solid #6BD1FF;
+
+}
+
+.banner-img-shadow {
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    box-shadow: inset 0px 0px 20px 8px #6BD1FF;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+}
+

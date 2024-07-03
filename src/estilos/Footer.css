@@ -1,0 +1,12 @@
+.contenedor-footer {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.97);
+    border-top: 4px solid #2271D1;
+    box-shadow: 0px 5px 29px 0px rgba(34, 113, 209, 0.7);
+}

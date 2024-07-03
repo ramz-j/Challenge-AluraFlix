@@ -1,0 +1,69 @@
+.contenedor-video{
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-video img{
+    border-radius: 15px 15px 0px 0px;    
+}
+
+.contenedor-btns {
+    display: flex;
+    border-bottom: 5px solid #6BD1FF;
+    border-right: 5px solid #6BD1FF;
+    border-left: 5px solid #6BD1FF;
+    border-radius: 0px 0px 15px 15px;
+    
+}
+
+.contenedor-btns button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #000;
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.contenedor-btns span {
+    color: #FFF;
+    padding-right: 10px;
+}
+
+.btn-borrar {
+    border-radius: 0px 0px 0px 10px;
+    
+}
+
+.btn-editar {
+    border-radius: 0px 0px 15px 0px;
+}
+
+.sombra-btns {
+    position: relative;
+    left: 9px;
+    width: 95%;
+    z-index: 1;
+    /* box-shadow: 0px -5px 6px 2px #6BD1FF; */
+}
+
+.contenedor-img {
+    position: relative;
+}
+
+.contenedor-img-shadow {
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    /* box-shadow: inset 0px 0px 20px 8px #6BD1FF; */
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+}
