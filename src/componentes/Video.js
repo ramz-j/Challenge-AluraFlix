@@ -3,7 +3,7 @@ import "../estilos/Videos.css";
 const Video = (props) => {
     
     const { titulo, categoria, imagen, video, id } = props.datos;
-    const { color, eliminarVideo }  = props;
+    const { color, eliminarVideo, editarVideo }  = props;
     
 
     const borderImg = {
@@ -38,7 +38,7 @@ const Video = (props) => {
                 </span>
                     Borrar
             </button>
-            <button className="btn-editar">
+            <button onClick={() => editarVideo(id)} className="btn-editar">
                     <span class="material-symbols-outlined">
                         border_color
                     </span>

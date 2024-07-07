@@ -1,0 +1,94 @@
+{
+    "videos" : [
+        {
+            "id": "1",
+            "titulo": "Cuando usar let, var y const",
+            "categoria": "Front End",
+            "imagen": "/img/cuando-usar-let-var-y-const.jpg",
+            "video": "https://www.youtube.com/watch?v=PztCEdIJITY",
+            "descripcion": "Lorem ipsum..."
+          },
+          {
+            "id": "2",
+            "titulo": "¿Qué es JavaScript?",
+            "categoria": "Front End",
+            "imagen": "/img/que-es-javascript.jpg",
+            "video": "https://www.youtube.com/watch?v=GJfOSoaXk4s",
+            "descripcion": "Lorem ipsum..."
+          },
+          {
+            "id": "3",
+            "titulo": "Equipo Front End",
+            "categoria": "Front End",
+            "imagen": "/img/equipo-front-end.jpg",
+            "video": "https://www.youtube.com/watch?v=rpvrLaBQwgg",
+            "descripcion": "Lorem ipsum..."
+          },
+          {
+            "id": "4",
+            "titulo": "Spring Framework. ¿Qué es?",
+            "categoria": "Back End",
+            "imagen": "/img/spring-framework-que-es.jpg",
+            "video": "https://www.youtube.com/watch?v=t-iqt1b2qqk",
+            "descripcion": "Lorem ipsum..."
+          },
+          {
+            "id": "5",
+            "titulo": "¿Qué es SQL y NOSQL?",
+            "categoria": "Back End",
+            "imagen": "/img/que-es-sql-y-nosql.jpg",
+            "video": "https://www.youtube.com/watch?v=cLLKVd5CNLc",
+            "descripcion": "Lorem ipsum..."
+          },
+          {
+            "id": "6",
+            "titulo": "Conoce los enum",
+            "categoria": "Back End",
+            "imagen": "/img/conoce-los-enum.jpg",
+            "video": "https://www.youtube.com/watch?v=EoPvlE85XAQ",
+            "descripcion": "Lorem ipsum..."
+          },
+          {
+            "id": "7",
+            "titulo": "¿Qué son las Soft Skills?",
+            "categoria": "Innovación y Gestión",
+            "imagen": "/img/que-son-las-soft-skills.jpg",
+            "video": "https://www.youtube.com/watch?v=vhwspfvI52k&t",
+            "descripcion": "Lorem ipsum..."
+          },
+          {
+            "id": "8",
+            "titulo": "7 Soft Skills más deseadas por las empresas",
+            "categoria": "Innovación y Gestión",
+            "imagen": "/img/las-7-softskills.jpg",
+            "video": "https://www.youtube.com/watch?v=YhR7Zp8NUzE&t",
+            "descripcion": "Lorem ipsum..."
+          },
+          {
+            "id": "9",
+            "titulo": "¿Qué son las metodologias ágiles?",
+            "categoria": "Innovación y Gestión",
+            "imagen": "/img/metodologias-agiles.jpg",
+            "video": "https://www.youtube.com/watch?v=6N3OkLCfK-0",
+            "descripcion": "Lorem ipsum..."
+          }
+    ],
+
+    "categorias" : [
+        {
+          "id": "1",
+          "titulo": "Front End",
+          "color": "#6BD1FF"
+        },
+        {
+          "id": "2",
+          "titulo": "Back End",
+          "color": "#00C86F"
+        },
+        {
+          "id": "3",
+          "titulo": "Innovación y Gestión",
+          "color": "#FFBA05"
+        }
+      ]
+}

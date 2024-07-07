@@ -4,9 +4,7 @@ import Video from './Video';
 function Categoria(props) {
 
   const { titulo, color } = props.datos;
-  const { videos, eliminarVideo } = props;
-
-  console.log(color);
+  const { videos, eliminarVideo, editarVideo } = props;
 
   const estiloTitulo = {
     backgroundColor: color
@@ -24,6 +22,7 @@ function Categoria(props) {
               key={index}
               color={color}
               eliminarVideo={eliminarVideo}
+              editarVideo={editarVideo}
             />)
           }
         </div>

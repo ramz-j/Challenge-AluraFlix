@@ -1,0 +1,29 @@
+.campo-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.campo-text label {
+    font-family: "Source Sans 3", sans-serif;
+    color: #FFF;
+    align-self: flex-start;
+    padding-bottom: 6px;
+}
+
+.campo-text input {
+    background-color: #03122F; 
+    border: 3px solid #2271D1;   
+    border-radius: 10px;
+    padding: 8px 7px;
+    margin-bottom: 10px;
+    color: #A5A5A5;
+}
+
+/* .campo-text input::placeholder {
+    color: #A5A5A5;
+    font-size: 12px;
+} */
+
