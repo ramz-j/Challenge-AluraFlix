@@ -1,14 +1,13 @@
 import React from 'react';
 import NavBar from './NavBar';
-import Banner from './Banner';
-import '../estilos/NavBar.css';
-import '../estilos/Banner.css';
 
-function Header() {
+import '../estilos/NavBar.css';
+
+
+function Header(props) {
   return (
     <header className='header' >
-        <NavBar />
-        <Banner />
+        <NavBar color={props.color} />
     </header>
   )
 }

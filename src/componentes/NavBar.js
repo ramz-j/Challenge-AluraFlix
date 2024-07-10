@@ -1,12 +1,18 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
-function NavBar() {
+function NavBar(props) {
+  console.log(props.color)
+  const fondo = {
+    backgroundColor: props.color
+  }
+
   return (
-    <div className='container-nav-bar'>
+    <div style={fondo} className='container-nav-bar'>
         <img src='/img/logo-main.png' />
         <div className='container-btn-nav-bar'>
-            <button className='btn-nav-bar'>Inicio</button>
-            <button className='btn-nav-bar'>Nuevo Video</button>
+          <Link to="/"><button style={fondo} className='btn-nav-bar'>Inicio</button></Link>
+          <Link to="/nuevo-video"><button style={fondo} className='btn-nav-bar'>Nuevo Video</button></Link>
         </div>
     </div>
   )

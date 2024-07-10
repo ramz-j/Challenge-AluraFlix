@@ -12,6 +12,8 @@
     font-weight: 600;
     margin-top: 10px;
     cursor: pointer;
+    display: flex;
+    text-align: center;
 }
 
 .boton:hover {
@@ -20,4 +22,8 @@
     border: 2px solid #2271D1;
     box-shadow: inset 0px 0px 12px 4px #2271D1;
 
+}
+
+.boton:focus {
+    outline: none;
 }

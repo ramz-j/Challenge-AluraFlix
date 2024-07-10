@@ -66,7 +66,7 @@ const FormularioModal = (props) => {
             actualizarValor={setDescripcion}
           />
           <div className="formulario-btns">
-            <Boton>
+            <Boton type="submit">
               Guardar
             </Boton>
             <Boton>

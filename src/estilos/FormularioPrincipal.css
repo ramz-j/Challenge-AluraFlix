@@ -1,0 +1,31 @@
+.contenedor-formulario-principal {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
+
+.encabezado h1 {
+    margin: 0px;
+}
+
+.titulo-form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+}
+
+.titulo-form h2 {
+    margin: 0px;
+    color: #FFF;
+    font-family: "Source Sans 3", sans-serif;
+}
