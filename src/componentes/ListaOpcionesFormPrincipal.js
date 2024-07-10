@@ -1,4 +1,5 @@
 import React from 'react'
+import "../estilos/ListaOpcionesFormPrincipal.css";
 
 const ListaOpcionesFormPrincipal = (props) => {
 

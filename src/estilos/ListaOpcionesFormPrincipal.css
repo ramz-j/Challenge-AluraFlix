@@ -1,0 +1,21 @@
+.lista-opciones-form-principal {    
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 20px 20px 20px 0px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.lista-opciones-form-principal label {
+    color: #FFF;
+    padding-bottom: 10px;
+}
+
+.lista-opciones-form-principal select {
+    background-color: #191919;
+    border-radius: 10px;
+    border: 1px solid #262626;
+    color: #A5A5A5;
+    height: 50px;
+    padding: 10px;
+}

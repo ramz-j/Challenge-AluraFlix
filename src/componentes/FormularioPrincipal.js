@@ -23,46 +23,50 @@ const FormularioPrincipal = (props) => {
         <form className='formulario-principal'>
           <div className='titulo-form'>
             <h2>Crear Tarjeta</h2>
-          </div>            
-          <CampoFormPrincipal 
-            titulo="Titulo"
-            placeholder="ingrese el título"
-            required
-            valor={titulo}
-            setTitulo={setTitulo}
-          />
-          <ListaOpcionesFormPrincipal 
-            valor={categoria}
-            setCategoria={setCategoria}
-            categorias={props.categorias}
-          />
-          <CampoFormPrincipal 
-            titulo="Imagen"
-            placeholder="el enlace es obligatorio"
-            required
-            valor={imagen}
-            setTitulo={setImagen}
-          />
-          <CampoFormPrincipal 
-            titulo="Video"
-            placeholder="ingrese el enlace del video"
-            required
-            valor={video}
-            setTitulo={setVideo}
-          />
-          <CampoFormPrincipal 
-            titulo="Descripción"
-            placeholder="¿de qué trata este vídeo?"
-            required
-            valor={descripcion}
-            setTitulo={setDescripcion}
-          />
-          <BotonFormPrincipal type="submit">
-            Guardar
-          </BotonFormPrincipal>
-          <BotonFormPrincipal>
-            Limpiar
-          </BotonFormPrincipal>
+          </div>
+          <div className='contenedor-campos'>
+            <CampoFormPrincipal 
+              titulo="Titulo"
+              placeholder="ingrese el título"
+              required
+              valor={titulo}
+              setTitulo={setTitulo}
+            />
+            <ListaOpcionesFormPrincipal 
+              valor={categoria}
+              setCategoria={setCategoria}
+              categorias={props.categorias}
+            />
+            <CampoFormPrincipal 
+              titulo="Imagen"
+              placeholder="el enlace es obligatorio"
+              required
+              valor={imagen}
+              setTitulo={setImagen}
+            />
+            <CampoFormPrincipal 
+              titulo="Video"
+              placeholder="ingrese el enlace del video"
+              required
+              valor={video}
+              setTitulo={setVideo}
+            />
+            <CampoFormPrincipal 
+              titulo="Descripción"
+              placeholder="¿de qué trata este vídeo?"
+              required
+              valor={descripcion}
+              setTitulo={setDescripcion}
+            />
+          </div>   
+          <div className='contenedor-botones'>
+            <BotonFormPrincipal>
+              Guardar
+            </BotonFormPrincipal>
+            <BotonFormPrincipal>
+              Limpiar
+            </BotonFormPrincipal>
+          </div>      
         </form>
     </div>
   )
