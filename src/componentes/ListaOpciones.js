@@ -3,10 +3,8 @@ import "../estilos/ListaOpciones.css"
 
 const ListaOpciones = (props) => {
 
-  
   const [nuevoValor, setNuevoValor] = useState(props.valor);
   
-
   const manejarCambio = (e) => {
     setNuevoValor(e.target.value);
     props.setCategoria(setNuevoValor);

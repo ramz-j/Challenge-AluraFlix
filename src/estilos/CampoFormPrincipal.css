@@ -16,6 +16,7 @@
     border-radius: 10px;
     border: 1px solid #262626;
     height: 50px;
+    color: #A5A5A5;
 }
 
 .campo-formulario input::placeholder{

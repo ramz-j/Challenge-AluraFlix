@@ -4,15 +4,33 @@ import ListaOpcionesFormPrincipal from '../componentes/ListaOpcionesFormPrincipa
 import BotonFormPrincipal from '../componentes/BotonFormPrincipal';
 
 import "../estilos/FormularioPrincipal.css";
+import { v4 as uuid } from 'uuid';
+
 
 const FormularioPrincipal = (props) => {
   
   const [titulo, setTitulo] = useState("");
-  const [categoria, setCategoria] = useState("");
+  const [categoria, setCategoria] = useState("Front End");
   const [imagen, setImagen] = useState("");
   const [video, setVideo] = useState("");
   const [descripcion, setDescripcion] = useState("");
 
+  const { registrarVideo } = props;
+
+  const manejarEnvio = (e) => {
+    e.preventDefault();
+    let datosEnviar = {
+      id: uuid(),
+      titulo,
+      categoria,
+      imagen,
+      video,
+      descripcion
+    }
+    console.log("Manejar envio");
+    registrarVideo(datosEnviar);
+
+  }
 
   return (
     <div className='contenedor-formulario-principal'>
@@ -20,7 +38,7 @@ const FormularioPrincipal = (props) => {
           <h1>Nuevo Video</h1>
           <p>Complete el formulario para crear una nueva tarjeta de video</p>
         </div>
-        <form className='formulario-principal'>
+        <form className='formulario-principal' onSubmit={manejarEnvio}>
           <div className='titulo-form'>
             <h2>Crear Tarjeta</h2>
           </div>
@@ -30,7 +48,7 @@ const FormularioPrincipal = (props) => {
               placeholder="ingrese el título"
               required
               valor={titulo}
-              setTitulo={setTitulo}
+              setValor={setTitulo}
             />
             <ListaOpcionesFormPrincipal 
               valor={categoria}
@@ -42,25 +60,25 @@ const FormularioPrincipal = (props) => {
               placeholder="el enlace es obligatorio"
               required
               valor={imagen}
-              setTitulo={setImagen}
+              setValor={setImagen}
             />
             <CampoFormPrincipal 
               titulo="Video"
               placeholder="ingrese el enlace del video"
               required
               valor={video}
-              setTitulo={setVideo}
+              setValor={setVideo}
             />
             <CampoFormPrincipal 
               titulo="Descripción"
               placeholder="¿de qué trata este vídeo?"
               required
               valor={descripcion}
-              setTitulo={setDescripcion}
+              setValor={setDescripcion}
             />
           </div>   
           <div className='contenedor-botones'>
-            <BotonFormPrincipal>
+            <BotonFormPrincipal type="submit">
               Guardar
             </BotonFormPrincipal>
             <BotonFormPrincipal>

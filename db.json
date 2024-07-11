@@ -1,94 +1,165 @@
 {
-    "videos" : [
-        {
-            "id": "1",
-            "titulo": "Cuando usar let, var y const",
-            "categoria": "Front End",
-            "imagen": "/img/cuando-usar-let-var-y-const.jpg",
-            "video": "https://www.youtube.com/watch?v=PztCEdIJITY",
-            "descripcion": "Lorem ipsum..."
-          },
-          {
-            "id": "2",
-            "titulo": "¿Qué es JavaScript?",
-            "categoria": "Front End",
-            "imagen": "/img/que-es-javascript.jpg",
-            "video": "https://www.youtube.com/watch?v=GJfOSoaXk4s",
-            "descripcion": "Lorem ipsum..."
-          },
-          {
-            "id": "3",
-            "titulo": "Equipo Front End",
-            "categoria": "Front End",
-            "imagen": "/img/equipo-front-end.jpg",
-            "video": "https://www.youtube.com/watch?v=rpvrLaBQwgg",
-            "descripcion": "Lorem ipsum..."
-          },
-          {
-            "id": "4",
-            "titulo": "Spring Framework. ¿Qué es?",
-            "categoria": "Back End",
-            "imagen": "/img/spring-framework-que-es.jpg",
-            "video": "https://www.youtube.com/watch?v=t-iqt1b2qqk",
-            "descripcion": "Lorem ipsum..."
-          },
-          {
-            "id": "5",
-            "titulo": "¿Qué es SQL y NOSQL?",
-            "categoria": "Back End",
-            "imagen": "/img/que-es-sql-y-nosql.jpg",
-            "video": "https://www.youtube.com/watch?v=cLLKVd5CNLc",
-            "descripcion": "Lorem ipsum..."
-          },
-          {
-            "id": "6",
-            "titulo": "Conoce los enum",
-            "categoria": "Back End",
-            "imagen": "/img/conoce-los-enum.jpg",
-            "video": "https://www.youtube.com/watch?v=EoPvlE85XAQ",
-            "descripcion": "Lorem ipsum..."
-          },
-          {
-            "id": "7",
-            "titulo": "¿Qué son las Soft Skills?",
-            "categoria": "Innovación y Gestión",
-            "imagen": "/img/que-son-las-soft-skills.jpg",
-            "video": "https://www.youtube.com/watch?v=vhwspfvI52k&t",
-            "descripcion": "Lorem ipsum..."
-          },
-          {
-            "id": "8",
-            "titulo": "7 Soft Skills más deseadas por las empresas",
-            "categoria": "Innovación y Gestión",
-            "imagen": "/img/las-7-softskills.jpg",
-            "video": "https://www.youtube.com/watch?v=YhR7Zp8NUzE&t",
-            "descripcion": "Lorem ipsum..."
-          },
-          {
-            "id": "9",
-            "titulo": "¿Qué son las metodologias ágiles?",
-            "categoria": "Innovación y Gestión",
-            "imagen": "/img/metodologias-agiles.jpg",
-            "video": "https://www.youtube.com/watch?v=6N3OkLCfK-0",
-            "descripcion": "Lorem ipsum..."
-          }
-    ],
-
-    "categorias" : [
-        {
-          "id": "1",
-          "titulo": "Front End",
-          "color": "#6BD1FF"
-        },
-        {
-          "id": "2",
-          "titulo": "Back End",
-          "color": "#00C86F"
-        },
-        {
-          "id": "3",
-          "titulo": "Innovación y Gestión",
-          "color": "#FFBA05"
-        }
-      ]
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "Cuando usar let, var y const",
+      "categoria": "Front End",
+      "imagen": "/img/cuando-usar-let-var-y-const.jpg",
+      "video": "https://www.youtube.com/watch?v=PztCEdIJITY",
+      "descripcion": "Lorem ipsum..."
+    },
+    {
+      "id": "2",
+      "titulo": "¿Qué es JavaScript?",
+      "categoria": "Front End",
+      "imagen": "/img/que-es-javascript.jpg",
+      "video": "https://www.youtube.com/watch?v=GJfOSoaXk4s",
+      "descripcion": "Lorem ipsum..."
+    },
+    {
+      "id": "3",
+      "titulo": "Equipo Front End",
+      "categoria": "Front End",
+      "imagen": "/img/equipo-front-end.jpg",
+      "video": "https://www.youtube.com/watch?v=rpvrLaBQwgg",
+      "descripcion": "Lorem ipsum..."
+    },
+    {
+      "id": "4",
+      "titulo": "Spring Framework. ¿Qué es?",
+      "categoria": "Back End",
+      "imagen": "/img/spring-framework-que-es.jpg",
+      "video": "https://www.youtube.com/watch?v=t-iqt1b2qqk",
+      "descripcion": "Lorem ipsum..."
+    },
+    {
+      "id": "5",
+      "titulo": "¿Qué es SQL y NOSQL?",
+      "categoria": "Back End",
+      "imagen": "/img/que-es-sql-y-nosql.jpg",
+      "video": "https://www.youtube.com/watch?v=cLLKVd5CNLc",
+      "descripcion": "Lorem ipsum..."
+    },
+    {
+      "id": "6",
+      "titulo": "Conoce los enum",
+      "categoria": "Back End",
+      "imagen": "/img/conoce-los-enum.jpg",
+      "video": "https://www.youtube.com/watch?v=EoPvlE85XAQ",
+      "descripcion": "Lorem ipsum..."
+    },
+    {
+      "id": "7",
+      "titulo": "¿Qué son las Soft Skills?",
+      "categoria": "Innovación y Gestión",
+      "imagen": "/img/que-son-las-soft-skills.jpg",
+      "video": "https://www.youtube.com/watch?v=vhwspfvI52k&t",
+      "descripcion": "Lorem ipsum..."
+    },
+    {
+      "id": "8",
+      "titulo": "7 Soft Skills más deseadas por las empresas",
+      "categoria": "Innovación y Gestión",
+      "imagen": "/img/las-7-softskills.jpg",
+      "video": "https://www.youtube.com/watch?v=YhR7Zp8NUzE&t",
+      "descripcion": "Lorem ipsum..."
+    },
+    {
+      "id": "9",
+      "titulo": "¿Qué son las metodologias ágiles?",
+      "categoria": "Innovación y Gestión",
+      "imagen": "/img/metodologias-agiles.jpg",
+      "video": "https://www.youtube.com/watch?v=6N3OkLCfK-0",
+      "descripcion": "Lorem ipsum..."
+    },
+    {
+      "id": "32c96a81-9182-45da-86c7-ae9b634823b1",
+      "titulo": "Titulo New",
+      "categoria": "Front End",
+      "imagen": "Titulo New",
+      "video": "Titulo New",
+      "descripcion": "Titulo New"
+    },
+    {
+      "id": "a679e67e-c564-4e5d-8bf1-7c9051339ee9",
+      "titulo": "titulo nuevo",
+      "categoria": "Back End",
+      "imagen": "imagen nueva",
+      "video": "video nuevo",
+      "descripcion": "descripocion nueva"
+    },
+    {
+      "id": "b3307935-6883-45c0-b81f-26c811c1fa70",
+      "titulo": "titulo nuevo",
+      "categoria": "Back End",
+      "imagen": "imagen nueva",
+      "video": "video nuevo",
+      "descripcion": "descripocion nueva"
+    },
+    {
+      "id": "0e084c06-71e7-4102-8e5d-e6449fb6ee09",
+      "titulo": "titulo nuevo",
+      "categoria": "Back End",
+      "imagen": "imagen nueva",
+      "video": "video nuevo",
+      "descripcion": "descripocion nueva"
+    },
+    {
+      "id": "92bbb847-5cd4-48af-9e45-bcc55d1f70b8",
+      "titulo": "titulo nuevo",
+      "categoria": "Back End",
+      "imagen": "imagen nueva",
+      "video": "video nuevo",
+      "descripcion": "descripocion nueva"
+    },
+    {
+      "id": "9a86601c-eb87-49b8-ae10-3bca6c67c071",
+      "titulo": "titulo nuevo",
+      "categoria": "Back End",
+      "imagen": "imagen nueva",
+      "video": "video nuevo",
+      "descripcion": "descripocion nueva"
+    },
+    {
+      "id": "ee2626d5-0c35-4766-8777-7173ba84e6ea",
+      "titulo": "titulo nuevo",
+      "categoria": "Back End",
+      "imagen": "imagen nueva",
+      "video": "video nuevo",
+      "descripcion": "descripocion nueva"
+    },
+    {
+      "id": "98698e3c-6804-4dc6-b00d-439973ea2333",
+      "titulo": "Titulo nuevo",
+      "categoria": "Back End",
+      "imagen": "Imagen nueva",
+      "video": "Video nuevo",
+      "descripcion": "Desccrip"
+    },
+    {
+      "id": "ae0b097e-5f55-4d03-9d2a-9f61f1962509",
+      "titulo": "Titulo  Nuevo",
+      "categoria": "Front End",
+      "imagen": "Imagen Nueva",
+      "video": "Video Nuevo",
+      "descripcion": "Descripcion Nueva"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "titulo": "Front End",
+      "color": "#6BD1FF"
+    },
+    {
+      "id": "2",
+      "titulo": "Back End",
+      "color": "#00C86F"
+    },
+    {
+      "id": "3",
+      "titulo": "Innovación y Gestión",
+      "color": "#FFBA05"
+    }
+  ]
 }

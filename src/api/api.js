@@ -9,3 +9,6 @@ export const buscar = async (url, setData) => {
     setData(respuesta.data);
 }
 
+export const crear = async (url, data) => {
+    const respuesta = await api.post(url, data);
+}
