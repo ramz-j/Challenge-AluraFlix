@@ -11,28 +11,36 @@ import FormularioModal from '../componentes/FormularioModal';
 import '../estilos/Categoria.css';
 
 import { useState, useEffect } from 'react';
-import { buscar } from "../api/api";
+import { buscar, actualizar, borrar } from "../api/api";
 import { v4 as uuid } from 'uuid';
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+    const navigate = useNavigate();
+
     const [ mostrarFormulario, setMostrarFormulario ] = useState(false);
 
-    const [videos, actualizarVideos] = useState([]);
+    const [videos, setVideos] = useState([]);
   
     const [videoEditar, setVideoEditar] = useState();
   
+    const actualizarVideo = (video) => {
+      const {id} = video.id;
+      actualizar(`/videos/${id}`, video);
+      setMostrarFormulario(false);
+      buscar("/videos", setVideos);
+    }
+
     useEffect(() => {  
-      buscar("/videos", actualizarVideos);
+      buscar("/videos", setVideos);
     },[])
   
-    const registrarVideo = (video) => {
-      actualizarVideos([...videos, video]);
-    }
+
   
     const eliminarVideo = (id) => {
-      console.log(id);
-      const nuevosVideos = videos.filter((video) => video.id !== id);
-      actualizarVideos(nuevosVideos);
+      borrar(`/videos/${id}`);
+      buscar("/videos", setVideos);
     }
   
     const categorias = [
@@ -54,7 +62,6 @@ const Home = () => {
     ]
   
     const editarVideo = (id) => {
-  
       setMostrarFormulario(true);
       videos.forEach((video) => {
         video.id === id && setVideoEditar(video)
@@ -73,8 +80,7 @@ const Home = () => {
         <div className='contenedor-inf'>
         
           {
-            categorias.map((categoria) => <Categoria 
-              
+            categorias.map((categoria) => <Categoria              
               datos={categoria}
               key={categoria.id}
               videos={videos.filter(videos => videos.categoria === categoria.titulo)}
@@ -88,7 +94,7 @@ const Home = () => {
           mostrarFormulario && <FormularioModal 
             categorias={categorias.map((categoria) => categoria.titulo)}
             videoEditar={videoEditar}
-            registrarVideo={registrarVideo}
+            actualizarVideo={actualizarVideo}
             cerrarEditar={cerrarEditar}
           />
         }

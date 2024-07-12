@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const AgregarVideo = () => {
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [video, setVideo] = useState([]);
 

@@ -17,15 +17,17 @@ const FormularioModal = (props) => {
   const [descripcionEditado, setDescripcion] = useState(descripcion);
 
   const manejarEnvio = (e) => {
+    // console.log(tituloEditado, categoriaEditado,imagenEditado, videoEditado,descripcionEditado);
     e.preventDefault();
     let datosEnviar = {
-      titulo,
-      categoria,
-      imagen,
-      video,
-      descripcion
+      id: props.videoEditar,
+      titulo: tituloEditado,
+      categoria: categoriaEditado,
+      imagen: imagenEditado,
+      video: videoEditado,
+      descripcion: descripcionEditado
     }
-    registrarVideo(datosEnviar)
+    props.actualizarVideo(datosEnviar);
   }
 
   return (
@@ -43,26 +45,26 @@ const FormularioModal = (props) => {
           />
           
           <ListaOpciones 
-            valor={categoria}
+            valor={categoriaEditado}
             setCategoria={setCategoria}
             categorias={props.categorias}
           />
           <CampoFormulario 
             titulo="Imagen"
             required
-            valor={imagen}
+            valor={imagenEditado}
             actualizarValor={setImagen}
           />
           <CampoFormulario 
             titulo="Video"
             required
-            valor={video}
+            valor={videoEditado}
             actualizarValor={setVideo}
           />
           <CampoFormulario 
             titulo="Descripción"
             required
-            valor={descripcion}
+            valor={descripcionEditado}
             actualizarValor={setDescripcion}
           />
           <div className="formulario-btns">

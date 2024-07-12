@@ -12,3 +12,11 @@ export const buscar = async (url, setData) => {
 export const crear = async (url, data) => {
     const respuesta = await api.post(url, data);
 }
+
+export const actualizar = async (url, data) => {
+    const respuesta = await api.put(url, data);
+}
+
+export const borrar = async (url) => {
+    const respuesta = await api.delete(url);
+}

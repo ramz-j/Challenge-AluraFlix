@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from "react-router-dom"
 
 function NavBar(props) {
-  console.log(props.color)
   const fondo = {
     backgroundColor: props.color
   }
