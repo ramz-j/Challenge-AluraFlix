@@ -10,8 +10,8 @@ function NavBar(props) {
     <div style={fondo} className='container-nav-bar'>
         <img src='/img/logo-main.png' />
         <div className='container-btn-nav-bar'>
-          <Link to="/"><button style={fondo} className='btn-nav-bar'>Inicio</button></Link>
-          <Link to="/nuevo-video"><button style={fondo} className='btn-nav-bar'>Nuevo Video</button></Link>
+          <Link to="/"><button style={fondo}  className={`btn-nav-bar ${props.elemento === 'home' ? 'selected' : ''}`}>Inicio</button></Link>
+          <Link to="/nuevo-video"><button style={fondo} className={`btn-nav-bar ${props.elemento === 'nuevo-video' ? 'selected' : ''}`}>Nuevo Video</button></Link>
         </div>
     </div>
   )

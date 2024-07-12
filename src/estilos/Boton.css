@@ -1,4 +1,9 @@
 .boton {
+    font-family: "Source Sans 3", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    font-size: 16px;
     width: 120px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -6,14 +11,9 @@
     background-color: #03122F;
     border: 2px solid #F5F5F5;
     color: #fff;
-    font-family: "Source Sans 3", sans-serif;
-    text-transform: uppercase;
-    font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
     cursor: pointer;
-    display: flex;
-    text-align: center;
 }
 
 .boton:hover {

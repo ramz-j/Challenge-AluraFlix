@@ -75,7 +75,7 @@ const Home = () => {
   
     return (
       <div className="contenedor-home">
-        <Header />   
+        <Header elemento="home"/>   
         <Banner />
         <div className='contenedor-inf'>
         

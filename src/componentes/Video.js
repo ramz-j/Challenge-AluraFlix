@@ -1,4 +1,4 @@
-import "../estilos/Videos.css";
+import "../estilos/Video.css";
 
 const Video = (props) => {
     

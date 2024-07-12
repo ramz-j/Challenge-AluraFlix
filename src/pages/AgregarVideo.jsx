@@ -38,7 +38,7 @@ const AgregarVideo = () => {
 
   return (
     <div>
-      <Header color="rgba(0, 0, 0, 0.97)" />
+      <Header color="rgba(0, 0, 0, 0.97)" elemento="nuevo-video" />
 
       <FormularioPrincipal 
         categorias={categorias.map((categoria) => categoria.titulo)}
