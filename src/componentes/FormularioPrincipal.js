@@ -17,6 +17,15 @@ const FormularioPrincipal = (props) => {
 
   const { registrarVideo } = props;
 
+  const resetearValores = (e) => {
+    console.log("Dentro de resetear valores");
+    setTitulo('');
+    setCategoria('Front End');
+    setImagen('');
+    setVideo('');
+    setDescripcion('');
+  }
+
   const manejarEnvio = (e) => {
     e.preventDefault();
     let datosEnviar = {
@@ -81,7 +90,7 @@ const FormularioPrincipal = (props) => {
             <BotonFormPrincipal type="submit">
               Guardar
             </BotonFormPrincipal>
-            <BotonFormPrincipal>
+            <BotonFormPrincipal type="reset" resetearValores={resetearValores} >
               Limpiar
             </BotonFormPrincipal>
           </div>      

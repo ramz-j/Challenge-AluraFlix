@@ -16,6 +16,14 @@ const FormularioModal = (props) => {
   const [videoEditado, setVideo] = useState(video);
   const [descripcionEditado, setDescripcion] = useState(descripcion);
 
+  const resetearValores = (e) => {
+    setTitulo(titulo);
+    setCategoria(categoria);
+    setImagen(imagen);
+    setVideo(video);
+    setDescripcion(descripcion);
+  }
+
   const manejarEnvio = (e) => {
     // console.log(tituloEditado, categoriaEditado,imagenEditado, videoEditado,descripcionEditado);
     e.preventDefault();
@@ -71,7 +79,7 @@ const FormularioModal = (props) => {
             <Boton type="submit">
               Guardar
             </Boton>
-            <Boton>
+            <Boton resetearValores={resetearValores} type="reset">
               Limpiar
             </Boton>
           </div>
