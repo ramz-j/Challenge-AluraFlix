@@ -79,7 +79,7 @@ const FormularioModal = (props) => {
             <Boton type="submit">
               Guardar
             </Boton>
-            <Boton resetearValores={resetearValores} type="reset">
+            <Boton resetearValores={resetearValores}>
               Limpiar
             </Boton>
           </div>
